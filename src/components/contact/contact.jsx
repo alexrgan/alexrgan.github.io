@@ -29,7 +29,7 @@ class Contact extends Component {
                     </div>
                     <div className="c-img-wrapper">
                         <SocialIcon
-                            url="https://github.com/AlexsGan"
+                            url="https://github.com/alexrgan"
                             target="_blank"
                             network="github"
                             bgColor="black"

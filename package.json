@@ -1,7 +1,7 @@
 {
   "name": "new",
   "version": "0.1.0",
-  "homepage": "https://alexsgan.github.io",
+  "homepage": "https://alexrgan.github.io",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
