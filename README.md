@@ -1,3 +1,3 @@
-# alexsgan.github.io
+# alexrgan.github.io
 
 This is my personal website created using React.
