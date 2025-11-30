@@ -1,5 +1,5 @@
 {
-  "name": "new",
+  "name": "portfolio",
   "version": "0.1.0",
   "homepage": "https://alexrgan.github.io",
   "private": true,
@@ -9,19 +9,11 @@
     "@mui/icons-material": "^5.6.2",
     "@mui/lab": "^5.0.0-alpha.81",
     "@mui/material": "^5.7.0",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "nth-check": "^2.0.1",
     "particles-bg": "^2.5.5",
     "react": "^17.0.2",
-    "react-device-detect": "^2.2.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^5.0.1",
-    "react-social-icons": "^5.13.0",
-    "react-tsparticles": "^2.0.6",
-    "react-vertical-timeline-component": "^3.5.2",
-    "web-vitals": "^1.0.1"
+    "react-social-icons": "^5.13.0"
   },
   "scripts": {
     "predeploy": "npm run build",

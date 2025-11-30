@@ -7,7 +7,6 @@ import Toggle from "./components/toggle/toggle";
 import { ThemeContext } from "./context";
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import Projects from "./components/projects/projects";
 import ParticlesBg from 'particles-bg'
 
 

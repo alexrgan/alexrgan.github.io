@@ -1,5 +1,4 @@
 import "./intro.css"
-import Me from "../../img/me_transparent_1.png"
 import React, { Component } from "react"
 // import Particles from "react-tsparticles";
 // import ParticlesBg from 'particles-bg'
