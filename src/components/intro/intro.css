@@ -125,6 +125,11 @@
         height: 100%;
     }
 
+    .i-name{
+        font-size: 42px;
+        white-space: nowrap;
+    }
+
     /* .i-desc{
         display: none;
     } */
