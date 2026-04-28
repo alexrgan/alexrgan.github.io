@@ -40,7 +40,7 @@ class Contact extends Component {
                 <Divider/>
                 <div className="c-footer">
                     <p className="c-footer-text">
-                        Copyright © 2022 Alex Gan.
+                        Copyright © {new Date().getFullYear()} Alex Gan.
                     </p>
                 </div>
             </div>

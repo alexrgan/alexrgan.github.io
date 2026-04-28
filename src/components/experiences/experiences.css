@@ -2,23 +2,6 @@
     padding-bottom: 50px;
 }
 
-.e-timeline-wrapper{
-    max-width: 1000px;
-    margin: auto;
-}
-
-.timeline-content {
-    padding-left: 20px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    max-width: 900px;
-    /* min-width: 220px; */
-}
-
-.experience-accordion {
-    overflow: hidden;
-}
-
 .e-title-wrapper {
     display: flex;
     align-items: center;
@@ -26,11 +9,108 @@
     padding-bottom: 50px;
 }
 
+.e-list-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.experience-accordion {
+    overflow: hidden;
+    border-radius: 12px !important;
+}
+
+.e-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 16px;
+}
+
+.e-summary-left {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    flex: 1;
+}
+
+.e-summary-text {
+    min-width: 0;
+}
+
+.e-company {
+    margin: 0;
+    color: white;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.e-position {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+}
+
+.e-summary-right {
+    flex-shrink: 0;
+    margin-right: 8px;
+}
+
+.e-date-pill {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.18);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+    backdrop-filter: blur(2px);
+}
 
 .e-img {
     object-fit: contain;
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 14px;
+}
+
+.experience-details-list {
+    margin: 0;
+    padding-left: 20px;
+    color: white;
+}
+
+.experience-details-list li {
+    margin-bottom: 6px;
+    line-height: 1.45;
+}
+
+.experience-details-list li:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .e-summary {
+        flex-wrap: wrap;
+    }
+
+    .e-summary-right {
+        flex-basis: 100%;
+        margin-top: 8px;
+        margin-right: 0;
+    }
+
+    .e-img {
+        height: 48px;
+        width: 48px;
+    }
+
+    .e-company {
+        font-size: 1.05rem;
+    }
 }

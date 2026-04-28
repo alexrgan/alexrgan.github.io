@@ -53,14 +53,15 @@ class Intro extends Component {
                 <div className="i-left">
                     <div className="i-left-wrapper">
                         <h2 className="i-intro">Hello! My name is</h2>
-                        <h1 className="i-name">Alex Gan</h1>
+                        <h1 className="i-name">Alex (Rui) Gan</h1>
                         {/* <h1 className="i-name">{this.i_css()}</h1> */}
                         <div className="i-title">
                             <div className="i-title-wrapper">
                                 <div className="i-title-item">Software Engineer</div>
-                                <div className="i-title-item">Gamer</div>
                                 <div className="i-title-item">Pianist </div>
                                 <div className="i-title-item">Swimmer</div>
+                                <div className="i-title-item">Vlogger</div>
+                                <div className="i-title-item">Gamer</div>
                             </div>
                         </div>
                         <p className="i-desc">

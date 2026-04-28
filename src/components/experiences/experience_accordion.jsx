@@ -14,35 +14,44 @@ class ExperienceAccordion extends Component {
     const dict = this.props.dict;
 
     return (
-      <div>
-      <Accordion className="experience-accordion">
+      <Accordion className="experience-accordion" disableGutters>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
           sx={{
-            // backgroundColor: "#ff7f50"
-            // background: "linear-gradient(to right, rgba(255,100,100), rgba(255,200,80))"
             background: "linear-gradient(to right, rgb(100,99,237), rgb(100,189,237))"
           }}
         >
-          <div className="e-img-wrapper">
-            <img src={dict.logo} alt="" className="e-img" />
-          </div>
-          <div>
-            <h2>{dict.company}</h2>
-            <h>{dict.position}</h>
+          <div className="e-summary">
+            <div className="e-summary-left">
+              <div className="e-img-wrapper">
+                <img src={dict.logo} alt="" className="e-img" />
+              </div>
+              <div className="e-summary-text">
+                <h2 className="e-company">{dict.company}</h2>
+                <span className="e-position">{dict.position}</span>
+              </div>
+            </div>
+            <div className="e-summary-right">
+              <span className="e-date-pill">{dict.date}</span>
+            </div>
           </div>
         </AccordionSummary>
         <AccordionDetails
-        sx={{
-          background: "linear-gradient(to right, rgb(100,99,237), rgb(100,189,237))"
-        }}
+          sx={{
+            background: "linear-gradient(to right, rgb(100,99,237), rgb(100,189,237))"
+          }}
         >
-          <p>
-            {dict.details}
-          </p>
+          {Array.isArray(dict.details) ? (
+            <ul className="experience-details-list">
+              {dict.details.map((item, idx) => (
+                <li key={idx}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{dict.details}</p>
+          )}
         </AccordionDetails>
       </Accordion>
-      </div>
     );
   }
 }

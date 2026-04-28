@@ -3,9 +3,7 @@ import amazon_logo from "../../img/amazon_logo.jpg"
 import tccsa_logo from "../../img/tccsa_logo.jpg"
 import { Component } from "react"
 
-import * as React from 'react';
-import Timeline from '@mui/lab/Timeline';
-import ExperienceTimeline from "./experience_timeline";
+import ExperienceAccordion from "./experience_accordion";
 
 class Experiences extends Component {
 
@@ -15,7 +13,13 @@ class Experiences extends Component {
             position: "Software Development Engineer",
             date: "Aug 2022 - Now",
             logo: amazon_logo,
-            details: "\u00a0 ".repeat(100),
+            details: [
+                "Led design and implementation of an agentic AI platform built on MCP and AWS Bedrock, reducing advertiser analysis time from 2 days to minutes and driving $6MM annual revenue.",
+                "Built end-to-end data pipeline using Airflow and Apache Spark processing 35B keywords daily across 7 marketplaces, improving ROAS by 71%.",
+                "Designed AI-powered pricing skill with secure cross-service data access across 4 auth systems, reducing manual pricing effort from 2 hours to 3 minutes per deal.",
+                "Led development of Amazon Posts and Post Boost coordinating 11+ teams, reducing ad creation time by 70%.",
+                "Built automated oncall tooling reducing customer issue resolution time by 10x. Won org-wide Customer Obsession award.",
+            ],
         }
 
         const amazon_intern_dict = {
@@ -23,7 +27,9 @@ class Experiences extends Component {
             position: "Software Development Engineer Intern",
             date: "May 2021 - Jul 2021",
             logo: amazon_logo,
-            details: "Developed a tool using Typescript and React that reduces the time teams need to build software quickly and reliably, resulting in a better customer experience.",
+            details: [
+                "Developed a tool using TypeScript and React that reduces the time teams need to build software quickly and reliably, resulting in a better customer experience.",
+            ],
         }
 
         const tccsa_dict = {
@@ -31,8 +37,12 @@ class Experiences extends Component {
             position: "Web Devleoper",
             date: "May 2020 - Apr 2021",
             logo: tccsa_logo,
-            details: "Built and maintained the club website to help promote Chinese culture as well as diversity to U of T students.",
+            details: [
+                "Built and maintained the club website to help promote Chinese culture as well as diversity to U of T students.",
+            ],
         }
+
+        const experiences = [amazon_dict, amazon_intern_dict, tccsa_dict];
 
         return (
             <div className="e">
@@ -40,12 +50,10 @@ class Experiences extends Component {
                     <h1 className="title-text">Experiences</h1>
                 </div>
 
-                <div className="e-timeline-wrapper">
-                <Timeline>
-                    <ExperienceTimeline dict={amazon_dict}/>
-                    <ExperienceTimeline dict={amazon_intern_dict}/>
-                    <ExperienceTimeline dict={tccsa_dict}/>
-                </Timeline>
+                <div className="e-list-wrapper">
+                    {experiences.map((exp, idx) => (
+                        <ExperienceAccordion key={idx} dict={exp} />
+                    ))}
                 </div>
             </div>
         );
