@@ -58,7 +58,7 @@ class Intro extends Component {
                         <div className="i-title">
                             <div className="i-title-wrapper">
                                 <div className="i-title-item">Software Engineer</div>
-                                <div className="i-title-item">Pianist </div>
+                                <div className="i-title-item">Pianist</div>
                                 <div className="i-title-item">Swimmer</div>
                                 <div className="i-title-item">Vlogger</div>
                                 <div className="i-title-item">Gamer</div>

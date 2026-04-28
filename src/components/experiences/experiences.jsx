@@ -11,7 +11,7 @@ class Experiences extends Component {
         const amazon_dict = {
             company: "Amazon",
             position: "Software Development Engineer",
-            date: "Aug 2022 - Now",
+            date: "Aug 2022 - Present",
             logo: amazon_logo,
             details: [
                 "Led design and implementation of an agentic AI platform built on MCP and AWS Bedrock, reducing advertiser analysis time from 2 days to minutes and driving $6MM annual revenue.",
@@ -28,13 +28,13 @@ class Experiences extends Component {
             date: "May 2021 - Jul 2021",
             logo: amazon_logo,
             details: [
-                "Developed a tool using TypeScript and React that reduces the time teams need to build software quickly and reliably, resulting in a better customer experience.",
+                "Developed a tool using TypeScript and React that reduced the time teams need to build software quickly and reliably, resulting in a better customer experience.",
             ],
         }
 
         const tccsa_dict = {
             company: "U of T TCCSA",
-            position: "Web Devleoper",
+            position: "Web Developer",
             date: "May 2020 - Apr 2021",
             logo: tccsa_logo,
             details: [
