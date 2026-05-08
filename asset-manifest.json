@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.87efcca1.css",
-    "main.js": "/static/js/main.ee76d38c.js",
+    "main.css": "/static/css/main.19cf48a4.css",
+    "main.js": "/static/js/main.2e600d16.js",
     "static/media/me.jpg": "/static/media/me.d72113cdb6309239156c.jpg",
     "static/media/AlexGanResume2026.pdf": "/static/media/AlexGanResume2026.f43217e64f9081df297e.pdf",
     "static/media/tccsa_logo.jpg": "/static/media/tccsa_logo.fa0581a4763214a5936c.jpg",
     "index.html": "/index.html",
-    "main.87efcca1.css.map": "/static/css/main.87efcca1.css.map",
-    "main.ee76d38c.js.map": "/static/js/main.ee76d38c.js.map"
+    "main.19cf48a4.css.map": "/static/css/main.19cf48a4.css.map",
+    "main.2e600d16.js.map": "/static/js/main.2e600d16.js.map"
   },
   "entrypoints": [
-    "static/css/main.87efcca1.css",
-    "static/js/main.ee76d38c.js"
+    "static/css/main.19cf48a4.css",
+    "static/js/main.2e600d16.js"
   ]
 }
