@@ -66,9 +66,6 @@
     75%{
         transform: translateY(-150px);
     }
-    /* 100%{
-        transform: translateY(-200px);
-    } */
 }
 
 .i-title-item.dark{

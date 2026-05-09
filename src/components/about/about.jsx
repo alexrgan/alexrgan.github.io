@@ -12,7 +12,7 @@ class About extends Component {
                 <div className="a-left">
                     <div className="a-card bg"></div>
                     <div className="a-card">
-                        <img src={Me} alt="" className="a-img" />
+                        <img src={Me} alt="Alex Gan in front of the Amazon Spheres" className="a-img" />
                     </div>
                 </div>
                 <div className="a-right">
@@ -23,7 +23,6 @@ class About extends Component {
                     <div className="a-resume">
                         <Button
                             variant="contained"
-                            // href="https://drive.google.com/file/d/10lzAmH2ayPKe9qvliDhPGBFcmvGHRRlK/view?usp=sharing"
                             href={ResumePdf}
                             target="_blank"
                         >

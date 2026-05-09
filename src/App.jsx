@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import About from "./components/about/about";
 import Contact from "./components/contact/contact";
 import Experiences from "./components/experiences/experiences";
@@ -27,12 +27,14 @@ const App = () => {
   const darkMode = theme.state.darkMode;
   const muiTheme = darkMode ? muiDarkTheme : muiLightTheme;
 
-  const appHeight = () => {
-    const doc = document.documentElement
-    doc.style.setProperty('--app-height', `${window.innerHeight}px`)
-  }
-  window.addEventListener('resize', appHeight)
-  appHeight()
+  useEffect(() => {
+    const appHeight = () => {
+      document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`)
+    }
+    appHeight()
+    window.addEventListener('resize', appHeight)
+    return () => window.removeEventListener('resize', appHeight)
+  }, [])
 
   return (
     <div>
@@ -41,20 +43,6 @@ const App = () => {
           color: darkMode && "white",
         }}
       >
-        {/* <div>
-          <ParticlesBg
-            color="#87CEEB"
-            type="circle"
-            num={2}
-            bg={true}
-          />
-          <ParticlesBg
-            color="#87CEFA"
-            type="circle"
-            num={2}
-            bg={true}
-          />
-        </div> */}
         <ParticlesBg
           type="circle"
           num={200}
@@ -73,7 +61,6 @@ const App = () => {
 
           <About />
           <Experiences />
-          {/* <Projects /> */}
           <Contact />
         </ThemeProvider>
       </div>

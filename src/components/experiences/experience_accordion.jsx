@@ -24,7 +24,7 @@ class ExperienceAccordion extends Component {
           <div className="e-summary">
             <div className="e-summary-left">
               <div className="e-img-wrapper">
-                <img src={dict.logo} alt="" className="e-img" />
+                <img src={dict.logo} alt={`${dict.company} logo`} className="e-img" />
               </div>
               <div className="e-summary-text">
                 <h2 className="e-company">{dict.company}</h2>
