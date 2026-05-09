@@ -1,5 +1,5 @@
 import "./about.css"
-import Me from "../../img/me.jpg"
+import Me from "../../img/me_spheres.webp"
 import ResumePdf from "../../pdfs/AlexGanResume2026.pdf"
 import React, { Component } from "react"
 import Button from '@mui/material/Button';
