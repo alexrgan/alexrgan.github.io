@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c5e33ca.css",
-    "main.js": "/static/js/main.83dd95a9.js",
+    "main.css": "/static/css/main.85333ad8.css",
+    "main.js": "/static/js/main.fdfeb72d.js",
     "static/media/me_spheres.webp": "/static/media/me_spheres.8bc351afbaf6163dfd68.webp",
     "static/media/AlexGanResume2026.pdf": "/static/media/AlexGanResume2026.3cfa8d5c0b53f670d4b2.pdf",
+    "static/media/travel_japan_deer.webp": "/static/media/travel_japan_deer.542fde3404b418dcd150.webp",
+    "static/media/travel_guiyang_night.webp": "/static/media/travel_guiyang_night.4cc0814f94df49e07a29.webp",
     "static/media/tccsa_logo.jpg": "/static/media/tccsa_logo.fa0581a4763214a5936c.jpg",
     "index.html": "/index.html",
-    "main.2c5e33ca.css.map": "/static/css/main.2c5e33ca.css.map",
-    "main.83dd95a9.js.map": "/static/js/main.83dd95a9.js.map"
+    "main.85333ad8.css.map": "/static/css/main.85333ad8.css.map",
+    "main.fdfeb72d.js.map": "/static/js/main.fdfeb72d.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c5e33ca.css",
-    "static/js/main.83dd95a9.js"
+    "static/css/main.85333ad8.css",
+    "static/js/main.fdfeb72d.js"
   ]
 }
