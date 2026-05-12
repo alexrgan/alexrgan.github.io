@@ -5,7 +5,7 @@
 
 .i-iOS{
     display: flex;
-    height: -webkit-fill-available;
+    height: var(--app-height);
 }
 
 .i-left{
@@ -111,7 +111,7 @@
 @media screen and (max-width: 480px){
     .i{
         flex-direction: column;
-        height: -webkit-fill-available;
+        height: var(--app-height);
     }
 
     .i-left-wrapper{
