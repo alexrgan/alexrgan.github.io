@@ -1,3 +1,24 @@
+:root {
+    --bg-color: white;
+    --text-color: #222932;
+}
+
+body.dark-mode {
+    --bg-color: #222932;
+    --text-color: white;
+}
+
+html, body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.intro-section {
+    position: relative;
+    background-color: black;
+    isolation: isolate;
+}
+
 .title-text{
     font-size: 50px;
     margin-bottom: 20px;

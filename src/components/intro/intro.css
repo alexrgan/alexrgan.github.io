@@ -1,12 +1,10 @@
 .i{
     display: flex;
-    height: var(--app-height);
     height: 100svh;
 }
 
 .i-iOS{
     display: flex;
-    height: var(--app-height);
     height: 100svh;
 }
 
@@ -113,7 +111,6 @@
 @media screen and (max-width: 480px){
     .i{
         flex-direction: column;
-        height: var(--app-height);
         height: 100svh;
     }
 

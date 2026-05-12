@@ -28,42 +28,25 @@ const App = () => {
   const muiTheme = darkMode ? muiDarkTheme : muiLightTheme;
 
   useEffect(() => {
-    const appHeight = () => {
-      document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`)
-    }
-    appHeight()
-    window.addEventListener('resize', appHeight)
-    return () => window.removeEventListener('resize', appHeight)
-  }, [])
+    document.body.classList.toggle('dark-mode', darkMode)
+  }, [darkMode])
 
   return (
     <div>
-      <div
-        style={{
-          color: darkMode && "white",
-        }}
-      >
+      <section className="intro-section">
         <ParticlesBg
           type="circle"
           num={200}
           bg={true}
         />
         <Intro darkMode={darkMode}/>
-      </div>
-      <div
-        style={{
-          backgroundColor: darkMode ? "#222932" : "white",
-          color: darkMode && "white",
-        }}
-      >
-        <ThemeProvider theme={muiTheme}>
-          <Toggle />
-
-          <About />
-          <Experiences />
-          <Contact />
-        </ThemeProvider>
-      </div>
+      </section>
+      <ThemeProvider theme={muiTheme}>
+        <Toggle />
+        <About />
+        <Experiences />
+        <Contact />
+      </ThemeProvider>
     </div>
 
   );
