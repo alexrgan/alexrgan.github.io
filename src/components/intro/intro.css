@@ -1,11 +1,13 @@
 .i{
     display: flex;
     height: var(--app-height);
+    height: 100svh;
 }
 
 .i-iOS{
     display: flex;
     height: var(--app-height);
+    height: 100svh;
 }
 
 .i-left{
@@ -112,6 +114,7 @@
     .i{
         flex-direction: column;
         height: var(--app-height);
+        height: 100svh;
     }
 
     .i-left-wrapper{
