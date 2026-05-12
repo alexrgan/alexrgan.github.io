@@ -1,8 +1,8 @@
 import "./about.css"
-import Me from "../../img/me_spheres.webp"
 import ResumePdf from "../../pdfs/AlexGanResume2026.pdf"
 import React, { Component } from "react"
 import Button from '@mui/material/Button';
+import PhotoEasterEgg from "./photo_easter_egg";
 
 class About extends Component {
     render() {
@@ -12,7 +12,7 @@ class About extends Component {
                 <div className="a-left">
                     <div className="a-card bg"></div>
                     <div className="a-card">
-                        <img src={Me} alt="Alex Gan in front of the Amazon Spheres" className="a-img" />
+                        <PhotoEasterEgg />
                     </div>
                 </div>
                 <div className="a-right">
